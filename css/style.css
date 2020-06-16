@@ -146,9 +146,9 @@ banner
     background-color: rgba(51, 51, 51) !important;
 }
 #banner{
-	background: url('dezordi.github.io/img/background_nav_home.jpg') no-repeat fixed;
+	background: url('https://github.com/dezordi/dezordi.github.io/blob/master/img/background_nav_home.jpg') no-repeat fixed;
 	background-size: cover;
-	min-height: 430px;
+	min-height: 500px;
 	position: relative;
 }
 @media (max-width: 1024px){
@@ -158,7 +158,7 @@ banner
 }
 .bg-color{
 	background-color: RGBA(51, 51, 51, 0.75);
-	min-height: 430px;
+	min-height: 500px;
 }
 .banner-info{
 	padding-top: 130px;
