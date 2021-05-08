@@ -39,7 +39,7 @@ a, a:hover, a:focus, a:active{
 }
 
 .section-padding{
-	padding: 60px 0px;
+	padding: 30px 0px 30px 0px;
 
 }
 h2 {
@@ -61,6 +61,10 @@ hr.botm-line {
     position: relative;
     border: 0;
     margin: 20px 0 20px 0;
+}
+
+p {
+    line-height: 1.5;
 }
 
 /***************************************
@@ -236,27 +240,27 @@ publications
     background-color:rgba(51,51,51,0.1);
 }
 .icon-info h4{
-	padding-bottom: 15px;
+	padding-bottom: 10px;
 }
 .icon-info p{
 	font-size: 15px !important;
 }
 /***************************************
-Tools
+Extracurricular
 ***************************************/
-.sec-header-tools{
+.sec-header-extracurricular{
     font-size: 45px;
     color: white;
     font-weight: bold;
     padding: 15px;
-    padding-top: 50px;
+    padding-top: 30px;
 }
-.div_tools{
+.div_extracurricular{
     background-color: rgb(51,51,51);
     margin-bottom: 20px;
     padding-bottom: 20px;
 }
-.data-tools{
+.data-extracurricular{
     font-family: 'Helvica', 'sans-serif';
     color: white;
     font-size: 34px;
@@ -268,7 +272,7 @@ Tools
     padding-bottom: 10px;
     margin-left: 50px;
 }
-.text-tools{
+.text-extracurricular{
     margin-top: 20px;
     padding-left: 15px;
     padding-top: 20px;
@@ -279,11 +283,60 @@ Tools
     font-weight: normal;
     background-color:rgba(0,0,0, 0.4);
 }
-.text-tools h4{
+.text-extracurricular h4{
     color: white;
 }
 .icon-info h4{
-	padding-bottom: 15px;
+	padding-bottom: 10px;
+}
+.icon-info p{
+	font-size: 15px !important;
+}
+/***************************************
+Tools
+***************************************/
+
+.sec-header-tools{
+    font-size: 45px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 15px;
+    padding-top: 0px;
+}
+.div_tools{
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+.data-tools{
+    font-family: 'Helvica', 'sans-serif';
+    color: rgb(0, 0, 0);
+    font-size: 34px;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 50px;
+}
+
+.text-tools{
+    margin-top: 20px;
+    padding-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 14px;
+    color:rgb(0, 0, 0);
+    line-height: 24px;
+    font-weight: normal;
+    background-color:rgba(51, 51, 51, 0.1);
+}
+.text-tools h4{
+    color: rgb(0, 0, 0);
+}
+.icon-info h4{
+	padding-bottom: 10px;
 }
 .icon-info p{
 	font-size: 15px !important;
@@ -291,67 +344,26 @@ Tools
 /***************************************
 contact us
 ***************************************/
+#contact{
+    background-color:rgb(51,51,51);
+}
 .col-md-12 h2, .col-md-4 h3 {
-    color:rgb(51,51,51);
+    color:rgb(255, 255, 255);
 }
 .space {
     margin-top: 40px;
-}
-.btn-form, .btn-form:hover, .btn-form:focus {
-    background-color: #333535;
-    color: #fff;
-    border-radius: 0px;
-    padding: 10px 20px;
-}
-.br-radius-zero {
-    border-radius: 0px;
-}
-.form-control{
-	height: 40px;
-}
-
-.validation {
-    color: red;
-    display:none;
-    margin: 0 0 20px;
-    font-weight:400;
-    font-size:13px;
-}
-
-#sendmessage {
-    color: green;
-    border:1px solid green;
-    display:none;
-    text-align:center;
-    padding:15px;
-    font-weight:600;
-    margin-bottom:15px;
-}
-
-#errormessage {
-    color: red;
-    display:none;
-    border:1px solid red;
-    text-align:center;
-    padding:15px;
-    font-weight:600;
-    margin-bottom:15px;
-}
-
-#sendmessage.show, #errormessage.show, .show {
-	display:block;
 }
 /***************************************
 footer
 ***************************************/
 #footer{
-	background-color: rgb(51,51,51);
+	background-color: rgb(255, 255, 255);
 }
 .ftr-tle {
     height: 15px;
 }
 .info-sec {
-    color: #fff;
+    color: rgb(51, 51, 51);
 }
 .quick-info li i {
     font-size: 8px;
@@ -386,7 +398,7 @@ footer
 }
 .footer-line {
     padding: 30px 0px;
-    color: #fff;
+    color: rgb(0, 0, 0);
 }
 
 .footer-line a {
