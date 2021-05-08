@@ -223,10 +223,10 @@ publications
     font-family: 'Helvica', 'sans-serif';
     color: black;
     font-size: 34px;
-    text-align: left;
+    text-align: center;
     font-weight: bold;
     margin-top: 20px;
-
+    margin-bottom: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -234,6 +234,7 @@ publications
     margin-top: 20px;
     padding: 20px;
     font-size: 14px;
+    text-align: justify;
     color: rgb(51,51,51);
     line-height: 24px;
     font-weight: normal;
@@ -264,19 +265,20 @@ Extracurricular
     font-family: 'Helvica', 'sans-serif';
     color: white;
     font-size: 34px;
-    text-align: left;
+    font-weight: bold;
+    text-align: center;
     font-weight: bold;
     margin-top: 20px;
     margin-bottom: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-left: 50px;
 }
 .text-extracurricular{
     margin-top: 20px;
     padding-left: 15px;
     padding-top: 20px;
     padding-bottom: 20px;
+    text-align: justify;
     font-size: 14px;
     color:white;
     line-height: 24px;
@@ -313,13 +315,12 @@ Tools
     color: rgb(0, 0, 0);
     font-size: 34px;
     line-height: 35px;
-    text-align: left;
+    text-align: center;
     font-weight: bold;
     margin-top: 20px;
     margin-bottom: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-left: 30px;
 }
 
 .text-tools{
@@ -327,6 +328,7 @@ Tools
     padding-left: 15px;
     padding-top: 20px;
     padding-bottom: 20px;
+    text-align: justify;
     font-size: 14px;
     color:rgb(0, 0, 0);
     line-height: 24px;
