@@ -1,5 +1,8 @@
 (function($) {
-
+  if ('ontouchstart' in document.documentElement) {
+    // if mobile we we use a backdrop because click events don't delegate
+    $('<div class="dropdown-backdrop"/>').insertAfter($(this)).on('click', clearMenus)
+  };
   // Add smooth scrolling to all links in navbar
   $(".navbar a,a.btn-appoint, .quick-info li a, .overlay-detail a").on('click', function(event) {
 
@@ -27,5 +30,4 @@
       $(".navbar-fixed-top").removeClass("top-nav-collapse");
     }
   });
-
 })(jQuery);
