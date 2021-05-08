@@ -4,7 +4,7 @@
     $('<div class="dropdown-backdrop"/>').insertAfter($(this)).on('click', clearMenus)
   };
   // Add smooth scrolling to all links in navbar
-  $(".navbar a,a.btn-appoint, .quick-info li a, .overlay-detail a").on('click', function(event) {
+  $(".navbar a,a.btn-appoint, .quick-info li a, .overlay-detail a").on('click touchstart', function(event) {
 
     var hash = this.hash;
     if (hash) {
@@ -18,7 +18,7 @@
 
   });
 
-  $(".navbar-collapse a").on('click', function() {
+  $(".navbar-collapse a").on('click touchstart', function() {
     $(".navbar-collapse.collapse").removeClass('in');
   });
 
