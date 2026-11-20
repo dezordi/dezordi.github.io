@@ -4,965 +4,391 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
   <title>Filipe Dezordi</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <meta content="Filipe Dezordi - Bioinformatician" name="description">
 
-  <!-- Favicons -->
   <link href="img/favicon.png" rel="icon">
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="vendor/aos/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700|Raleway:500,600,700" rel="stylesheet">
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
-  <link href="css/style.css" rel="stylesheet">
+  <style>
+    :root { --accent: #0563bb; --muted: #6c757d; --line: #dee2e6; }
+    body { font-family: "Open Sans", sans-serif; color: #272829; background: #fff; }
+    h1, h2, h3, h4 { font-family: "Raleway", sans-serif; }
+    main p, main li { text-align: justify; hyphens: auto; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
 
-  <!-- =======================================================
-  * Template Name: MyResume - v4.8.1
-  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+    header { padding: 48px 16px 24px; text-align: center; }
+    header img { width: 140px; height: 140px; object-fit: cover; border-radius: 50%; }
+    header h1 { margin: 16px 0 4px; font-weight: 700; }
+    header p { color: var(--muted); margin: 0; }
+    .social a { font-size: 22px; margin: 12px 6px 0; display: inline-block; color: #45505b; }
+    .social a:hover { color: var(--accent); text-decoration: none; }
+
+    .nav-tabs { justify-content: center; }
+    .nav-tabs .nav-link { color: #45505b; font-weight: 600; }
+    .nav-tabs .nav-link.active { color: var(--accent); }
+    .tab-pane { max-width: 860px; margin: 0 auto; padding: 32px 16px; }
+
+    .timeline { border-left: 2px solid var(--accent); padding-left: 20px; list-style: none; margin: 0; }
+    .timeline > li { position: relative; margin-bottom: 28px; }
+    .timeline > li::before { content: ""; position: absolute; left: -27px; top: 6px; width: 12px; height: 12px; border-radius: 50%; background: #fff; border: 2px solid var(--accent); }
+    .timeline h4 { font-size: 18px; font-weight: 700; margin: 0; }
+    .when { font-size: 13px; font-weight: 600; color: var(--accent); text-transform: uppercase; }
+    .where { font-style: italic; color: var(--muted); margin-bottom: 6px; }
+    .tag { font-size: 11px; padding: 1px 8px; border-radius: 10px; background: #e9f1fb; color: var(--accent); vertical-align: middle; }
+
+    .year { font-weight: 700; color: var(--accent); border-bottom: 1px solid var(--line); padding-bottom: 4px; margin: 32px 0 12px; }
+    .pubs { list-style: none; padding: 0; }
+    .pubs li { margin-bottom: 16px; }
+    .pubs .title { font-weight: 600; }
+    .pubs .meta { font-size: 14px; color: var(--muted); }
+    .pubs .meta a { margin-right: 10px; }
+
+    .repo { border: 1px solid var(--line); border-radius: 8px; padding: 16px; height: 100%; }
+    .repo h4 { font-size: 17px; font-weight: 700; margin-bottom: 4px; }
+    .repo p { font-size: 14px; color: var(--muted); margin: 0; }
+
+    footer { text-align: center; color: var(--muted); font-size: 14px; padding: 24px 16px 40px; }
+  </style>
 </head>
 
 <body>
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex flex-column justify-content-center">
+  <header>
+    <img src="img/profile2-img.jpg" alt="Filipe Dezordi">
+    <h1>Filipe Dezordi</h1>
+    <p>Bioinformatician · MGnify, EMBL-EBI</p>
+    <div class="social">
+      <a href="https://github.com/dezordi" target="_blank" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+      <a href="https://www.linkedin.com/in/filipe-dezordi-56a112113/" target="_blank" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+      <a href="https://scholar.google.com/citations?user=qcWuCREAAAAJ&hl=pt-BR" target="_blank" aria-label="Google Scholar"><i class="bi bi-mortarboard-fill"></i></a>
+      <a href="https://www.researchgate.net/profile/Filipe-Dezordi" target="_blank" aria-label="ResearchGate"><i class="bi bi-r-square-fill"></i></a>
+      <a href="http://lattes.cnpq.br/5474032010427603" target="_blank" aria-label="Lattes"><i class="bi bi-umbrella-fill"></i></a>
+    </div>
+  </header>
 
-    <nav id="navbar" class="navbar nav-menu">
-      <ul>
-        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-        <li><a href="#publications" class="nav-link scrollto"><i class="bi bi-file-earmark-text"></i> <span>Publications</span></a></li>
-        <li><a href="#tools" class="nav-link scrollto"><i class="bi bi-code-square"></i> <span>Codding</span></a></li>
-        <li><a href="#extracurricular" class="nav-link scrollto"><i class="bi bi-lightbulb"></i> <span>Extracurricular</span></a></li>
+  <nav>
+    <ul class="nav nav-tabs" role="tablist">
+      <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#resume" type="button" role="tab">Resume</button></li>
+      <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#publications" type="button" role="tab">Publications</button></li>
+      <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#coding" type="button" role="tab">Coding</button></li>
+    </ul>
+  </nav>
+
+  <main class="tab-content">
+
+    <!-- ======= Resume ======= -->
+    <section id="resume" class="tab-pane fade show active" role="tabpanel">
+      <p>
+        I’m a bioinformatician with around 10 years of experience. I earned my bachelor’s degree in Biotechnology working on insect mobilomics,
+        then focused on paleovirology in mosquito genomes during my master’s, and on genomic surveillance of SARS-CoV-2 in Brazil during my PhD,
+        under the supervision of <a href="https://github.com/WallauBioinfo" target="_blank">Dr. Gabriel Wallau</a>.
+      </p>
+      <p>
+        Over the past few years, I have had the opportunity to collaborate with several research groups at the
+        <a href="https://portal.fiocruz.br/" target="_blank">Oswaldo Cruz Foundation (Fiocruz)</a>, one of the world’s leading public health institutions,
+        where I completed both my master’s and my PhD.
+      </p>
+      <p>
+        I have also worked at <a href="https://www.einstein.br/" target="_blank">Hospital Israelita Albert Einstein</a>,
+        consistently ranked as the best hospital in Latin America and among the best in the world, and at
+        <a href="https://www.genesisgenomics.com.br/" target="_blank">Genesis Genomics</a>, part of <a href="https://www.grupofleury.com.br/" target="_blank">Grupo Fleury</a>,
+        one of the largest medical and diagnostic healthcare organizations in Latin America.
+      </p>
+      <p>
+        In addition, I briefly collaborated on projects with the <a href="https://pandemichub.who.int/" target="_blank">WHO Hub for Pandemic and Epidemic Intelligence</a>
+        and with <a href="https://www.itps.org.br/" target="_blank">Instituto Todos pela Saúde</a>, a non-profit organization founded in February 2021 to strengthen
+        epidemiological surveillance and help Brazil prepare for outbreaks, epidemics, and pandemics.
+      </p>
+      <p>
+        I currently work as a Bioinformatician at <a href="https://www.ebi.ac.uk/" target="_blank">EMBL-EBI</a> in the
+        <a href="https://www.ebi.ac.uk/about/teams/microbiome-informatics/" target="_blank">Microbiome Informatics team</a>, where I support the
+        <a href="https://www.ebi.ac.uk/metagenomics/" target="_blank">MGnify</a> service and contribute to the <a href="https://aegisearth.bio/en" target="_blank">AEGIS project</a>.
+      </p>
+
+      <h3 class="mt-4 mb-3">Timeline</h3>
+      <ul class="timeline">
+        <li>
+          <div class="when">May 2026 – Present</div>
+          <h4>Bioinformatician, MGnify <span class="tag">work</span></h4>
+          <div class="where">European Bioinformatics Institute (EMBL-EBI)</div>
+          <p>Working on the development, maintenance, and support of workflows and processes for the <a href="https://www.ebi.ac.uk/metagenomics/" target="_blank">MGnify</a> platform, as well as on the development of workflows for the analysis of ancient environmental metagenomics within the <a href="https://aegisearth.bio/en" target="_blank">AEGIS project</a>.</p>
+        </li>
+        <li>
+          <div class="when">Aug 2025 – May 2026</div>
+          <h4>Freelance Bioinformatician <span class="tag">work</span></h4>
+          <div class="where">Brazil · Remote</div>
+          <p>Bioinformatics for genomic epidemiology projects of different viruses.</p>
+          <ul>
+            <li>Development of <a href="https://github.com/WallauBioinfo/veritas" target="_blank">Veritas</a>, a tool for benchmarking pathogen genomic data, in partnership with Fiocruz – Instituto Aggeu Magalhães and the <a href="https://pandemichub.who.int/" target="_blank">WHO Hub for Pandemic and Epidemic Intelligence</a>.</li>
+            <li>Development of <a href="https://github.com/InstitutoTodosPelaSaude/viralQC" target="_blank">viralQC</a>, a quality control tool for consensus virus genomes, with <a href="https://www.itps.org.br/" target="_blank">Instituto Todos pela Saúde (ITPS)</a>.</li>
+          </ul>
+        </li>
+        <li>
+          <div class="when">Apr 2024 – Jul 2025</div>
+          <h4>Bioinformatics Analyst <span class="tag">work</span></h4>
+          <div class="where">Genesis Genomics · Brazil · Remote</div>
+          <p>In April 2024 the department I worked at in Hospital Israelita Albert Einstein merged into Genesis Genomics, where I kept the same role in the Bioinformatics Integrations and Automations team.</p>
+          <ul>
+            <li>Daily Python development; Python CLI tools and packages.</li>
+            <li>Serverless systems with AWS CDK in Python.</li>
+            <li>CI/CD with GitHub Actions and AWS CodePipeline.</li>
+            <li>WDL workflow development and maintenance.</li>
+            <li>Validation of SNP-array results.</li>
+          </ul>
+        </li>
+        <li>
+          <div class="when">Jun 2022 – Apr 2024</div>
+          <h4>Bioinformatics Analyst <span class="tag">work</span></h4>
+          <div class="where">Hospital Israelita Albert Einstein · Recife, PE, Brazil</div>
+          <p>Bioinformatics workflows for human genomics and automation of tasks on AWS and through APIs, using WDL, AWS, Docker, Git, Shell Script and Python in Scrum teams.</p>
+          <ul>
+            <li>Bioinformatics analysis routines applied to precision medicine.</li>
+            <li>New features for human genomics workflows.</li>
+            <li>BioDevOps team: AWS infrastructure with AWS CDK (IaC).</li>
+          </ul>
+        </li>
+        <li>
+          <div class="when">Mar 2020 – Aug 2024</div>
+          <h4>Ph.D. in Biosciences and Biotechnology in Health <span class="tag">study</span></h4>
+          <div class="where">Fundação Oswaldo Cruz (Fiocruz) · Recife, PE, Brazil</div>
+          <p>Functional evaluation of endogenous viral elements in culicid genomes and development of a web server with integrative analyses of genomic data. Bioinformatics pipelines with Python and Shell Script, and biological databases with JavaScript.</p>
+        </li>
+        <li>
+          <div class="when">Apr 2018 – Mar 2020</div>
+          <h4>M.Sc. in Biosciences and Biotechnology in Health <span class="tag">study</span></h4>
+          <div class="where">Fundação Oswaldo Cruz (Fiocruz) · Recife, PE, Brazil</div>
+          <p>Characterization of viruses inserted in the genomes of mosquito vectors of pathogens. GNU/Linux, Shell Script, Python, and data visualization in Python and R.</p>
+        </li>
+        <li>
+          <div class="when">Jan 2014 – Jun 2017</div>
+          <h4>Volunteer Research Assistant <span class="tag">work</span></h4>
+          <div class="where">Universidade Federal do Pampa · Rio Grande do Sul, Brazil</div>
+          <p>Undergraduate research at the Applied Proteomics Lab: GNU/Linux, omics and evolutionary analyses, field work with scorpions and drosophilids, DNA extraction, PCR and gel electrophoresis.</p>
+        </li>
+        <li>
+          <div class="when">2013 – 2017</div>
+          <h4>Bachelor of Biotechnology <span class="tag">study</span></h4>
+          <div class="where">Universidade Federal do Pampa · São Gabriel, RS, Brazil</div>
+        </li>
       </ul>
-    </nav><!-- .nav-menu -->
+    </section>
 
-  </header><!-- End Header -->
+    <!-- ======= Publications ======= -->
+    <section id="publications" class="tab-pane fade" role="tabpanel">
+      <p>Papers as main author or collaborator. <i class="bi bi-unlock-fill"></i> = preprint, <i class="bi bi-quote"></i> = news / blog, <i class="bi bi-code-square"></i> = code.</p>
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center">
-    <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Filipe Dezordi</h1>
-      <p>I'm a <span class="typed" data-typed-items="Scientist, Reader, Bioinformatician."></span></p>
-      <div class="social-links">
-        <a href="https://github.com/dezordi" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-        <a href="https://twitter.com/dezordi_fz" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="https://www.instagram.com/bio_info101/"  target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/filipe-dezordi-56a112113/"  target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        <a href="https://scholar.google.com/citations?user=qcWuCREAAAAJ&hl=pt-BR"  target="_blank" class="google-plus"><i class="bi bi-mortarboard-fill"></i></a>
-        <a href="http://lattes.cnpq.br/5474032010427603" target="_blank" class="lattes"><i class="bi bi-umbrella-fill"></i></a>
-        <a href="https://www.researchgate.net/profile/Filipe-Dezordi" target="_blank" class="rgate"><i class="bi bi-r-square-fill"></i></a>
+      <h3 class="year">2026</h3>
+      <ul class="pubs">
+        <li>
+          <div class="title">Increasing dengue outbreaks in temperate Brazil are associated with Aedes aegypti invasion and infestation levels</div>
+          <div class="meta">Nature Communications · <a href="https://www.nature.com/articles/s41467-026-78978-9" target="_blank"><i class="bx bx-link"></i></a><a href="https://doi.org/10.1101/2025.02.24.25322773" target="_blank"><i class="bi bi-unlock-fill"></i></a></div>
+        </li>
+        <li>
+          <div class="title">Genomic epidemiology of dengue virus serotype 3 lineage 3III_B.3.2 in Brazil: insights into its spread and dengue severity amid co-circulation of multiple dengue serotypes</div>
+          <div class="meta">Lancet Reg Health Am · <a href="https://doi.org/10.1016/j.lana.2026.101521" target="_blank"><i class="bx bx-link"></i></a></div>
+        </li>
+        <li>
+          <div class="title">Discovery of two potential new species and two novel bat-coronavirus subgenera (Phyllacovirus and Phyllobecovirus) in the Neotropics</div>
+          <div class="meta">bioRxiv (preprint) · <a href="https://doi.org/10.64898/2026.09.23.753618" target="_blank"><i class="bi bi-unlock-fill"></i></a></div>
+        </li>
+      </ul>
+
+      <h3 class="year">2025</h3>
+      <ul class="pubs">
+        <li>
+          <div class="title">Ambecovirus, a novel Betacoronavirus subgenus circulating in neotropical bats, sheds new light on bat-borne coronaviruses evolution</div>
+          <div class="meta">Virus Evolution · <a href="https://doi.org/10.1093/ve/veaf094" target="_blank"><i class="bx bx-link"></i></a></div>
+        </li>
+        <li>
+          <div class="title">Converging Transmission Routes of the Highly Pathogenic Avian Influenza H5N1 Clade 2.3.4.4b Virus in Uruguay: Phylogeographic Insights into Its Spread Across South America</div>
+          <div class="meta">Pathogens · <a href="https://doi.org/10.3390/pathogens14080793" target="_blank"><i class="bx bx-link"></i></a></div>
+        </li>
+        <li>
+          <div class="title">Higher frequency of interstate over international transmission chains of SARS-CoV-2 virus at the Rio Grande do Sul - Brazil state borders</div>
+          <div class="meta">Virus Research · <a href="https://doi.org/10.1016/j.virusres.2024.199500" target="_blank"><i class="bx bx-link"></i></a><a href="https://doi.org/10.1101/2024.05.21.24307668" target="_blank"><i class="bi bi-unlock-fill"></i></a></div>
+        </li>
+        <li>
+          <div class="title">Expansion of Oropouche virus in non-endemic Brazilian regions: analysis of genomic characterisation and ecological drivers</div>
+          <div class="meta">Lancet Infectious Diseases · <a href="https://doi.org/10.1016/S1473-3099(24)00687-X" target="_blank"><i class="bx bx-link"></i></a></div>
+        </li>
+      </ul>
+
+      <h3 class="year">2024</h3>
+      <ul class="pubs">
+        <li>
+          <div class="title">Diagnosis and genomic characterization of the largest western equine encephalitis virus outbreak in Uruguay during 2023-2024</div>
+          <div class="meta">npj Viruses · <a href="https://doi.org/10.1038/s44298-024-00078-6" target="_blank"><i class="bx bx-link"></i></a><a href="https://doi.org/10.21203/rs.3.rs-4547844/v1" target="_blank"><i class="bi bi-unlock-fill"></i></a></div>
+        </li>
+        <li>
+          <div class="title">EEfinder, a general purpose tool for identification of bacterial and viral endogenized elements in eukaryotic genomes</div>
+          <div class="meta">Comput Struct Biotechnol J · Conceptualisation, software development, tests · <a href="https://www.csbj.org/article/S2001-0370(24)00332-5/fulltext" target="_blank"><i class="bx bx-link"></i></a><a href="https://doi.org/10.1101/2024.05.24.595709" target="_blank"><i class="bi bi-unlock-fill"></i></a><a href="https://github.com/WallauBioinfo/EEfinder" target="_blank"><i class="bi bi-code-square"></i></a></div>
+        </li>
+        <li>
+          <div class="title">Sequencing and Analysis of Wolbachia Strains from A and B Supergroups Detected in Sylvatic Mosquitoes from Brazil</div>
+          <div class="meta">Microorganisms · <a href="https://doi.org/10.3390/microorganisms12112206" target="_blank"><i class="bx bx-link"></i></a></div>
+        </li>
+        <li>
+          <div class="title">Infection of South American coatis (Nasua nasua) with highly pathogenic avian influenza H5N1 virus displaying mammalian adaptive mutations</div>
+          <div class="meta">Microbial Pathogenesis · Data analysis · <a href="https://www.sciencedirect.com/science/article/abs/pii/S0882401024003620?via%3Dihub" target="_blank"><i class="bx bx-link"></i></a></div>
+        </li>
+        <li>
+          <div class="title">Highly divergent and diverse viral community infecting sylvatic mosquitoes from Northeast Brazil</div>
+          <div class="meta">Journal of Virology · Samples collection, support on data analysis · <a href="https://journals.asm.org/doi/10.1128/jvi.00083-24" target="_blank"><i class="bx bx-link"></i></a><a href="https://www.biorxiv.org/content/10.1101/2023.06.27.546706v1" target="_blank"><i class="bi bi-unlock-fill"></i></a></div>
+        </li>
+        <li>
+          <div class="title">ViralFlow v1.0 — a computational workflow for streamlining viral genomic surveillance</div>
+          <div class="meta">NAR Genomics and Bioinformatics · Conceptualisation, software development, tests, documentation · <a href="https://academic.oup.com/nargab/article/6/2/lqae056/7682253" target="_blank"><i class="bx bx-link"></i></a><a href="https://github.com/WallauBioinfo/ViralFlow" target="_blank"><i class="bi bi-code-square"></i></a></div>
+        </li>
+        <li>
+          <div class="title">Spatiotemporal transmission of SARS-CoV-2 lineages during 2020–2021 in Pernambuco — Brazil</div>
+          <div class="meta">Microbiology Spectrum · Conceptualisation, genomic data analysis, phylogenetic and phylodynamic analysis · <a href="https://doi.org/10.1128/spectrum.04218-23" target="_blank"><i class="bx bx-link"></i></a><a href="https://doi.org/10.1101/2023.01.25.23284831" target="_blank"><i class="bi bi-unlock-fill"></i></a></div>
+        </li>
+        <li>
+          <div class="title">Highly pathogenic avian influenza H5N1 virus infections in pinnipeds and seabirds in Uruguay: implications for bird-mammal transmission in South America</div>
+          <div class="meta">Virus Evolution · Data analysis, Microreact dashboard construction · <a href="https://academic.oup.com/ve/advance-article/doi/10.1093/ve/veae031/7645834" target="_blank"><i class="bx bx-link"></i></a><a href="https://www.biorxiv.org/content/10.1101/2023.12.14.571746v1" target="_blank"><i class="bi bi-unlock-fill"></i></a></div>
+        </li>
+      </ul>
+
+      <h3 class="year">2023</h3>
+      <ul class="pubs">
+        <li>
+          <div class="title">Real-life evaluation of a rapid antigen test (DPP® SARS-CoV-2 Antigen) for COVID-19 diagnosis of primary healthcare patients, in the context of the Omicron-dominant wave in Brazil</div>
+          <div class="meta">Clinical Microbiology and Infection · Phylogenetic analysis · <a href="https://www.clinicalmicrobiologyandinfection.com/article/S1198-743X(22)00569-9/fulltext" target="_blank"><i class="bx bx-link"></i></a><a href="https://www.medrxiv.org/content/10.1101/2022.08.02.22278277v1" target="_blank"><i class="bi bi-unlock-fill"></i></a></div>
+        </li>
+        <li>
+          <div class="title">SARS-CoV-2 intra-host diversity, antibody response, and disease severity after reinfection by the variant of concern Gamma in Brazil</div>
+          <div class="meta">Scientific Reports · Intrahost analysis · <a href="https://www.nature.com/articles/s41598-023-33443-1" target="_blank"><i class="bx bx-link"></i></a></div>
+        </li>
+        <li>
+          <div class="title">Ancient origin of Jingchuvirales derived glycoproteins integrated in arthropod genomes</div>
+          <div class="meta">Genetics and Molecular Biology · Conceptualisation, analysis design, formal data analysis · <a href="https://www.scielo.br/j/gmb/a/yCrfgswm3tprJDNnjPqTsxm/?lang=en" target="_blank"><i class="bx bx-link"></i></a><a href="https://www.biorxiv.org/content/10.1101/2022.06.22.497255v1" target="_blank"><i class="bi bi-unlock-fill"></i></a></div>
+        </li>
+        <li>
+          <div class="title">Assessment of clinical characteristics and viral load in individuals infected by Delta and Omicron variants of SARS-CoV-2</div>
+          <div class="meta">Heliyon · Genomic data analysis · <a href="https://linkinghub.elsevier.com/retrieve/pii/S2405844023062023" target="_blank"><i class="bx bx-link"></i></a></div>
+        </li>
+      </ul>
+
+      <h3 class="year">2022</h3>
+      <ul class="pubs">
+        <li>
+          <div class="title">Emergence and Spread of the SARS-CoV-2 Variant of Concern Delta across Different Brazilian Regions</div>
+          <div class="meta">Microbiology Spectrum · Genomic data analysis · <a href="https://journals.asm.org/doi/10.1128/spectrum.02641-21" target="_blank"><i class="bx bx-link"></i></a><a href="https://www.medrxiv.org/content/10.1101/2021.11.25.21266251v1" target="_blank"><i class="bi bi-unlock-fill"></i></a></div>
+        </li>
+        <li>
+          <div class="title">ViralFlow: an automated workflow for SARS-CoV-2 genome assembly, lineage assignment, mutations and intrahost variants detection</div>
+          <div class="meta">Viruses · Conceptualisation, workflow development, methodology, formal analysis · <a href="https://www.mdpi.com/1999-4915/14/2/217" target="_blank"><i class="bx bx-link"></i></a><a href="https://doi.org/10.1101/2021.10.01.21264424" target="_blank"><i class="bi bi-unlock-fill"></i></a><a href="https://www.cpqam.fiocruz.br/institucional/noticias/qualidade-e-inovacao-marcam-o-trabalho-de-vigilancia-genomica-da-fiocruz-pe" target="_blank"><i class="bi bi-quote"></i></a><a href="https://github.com/dezordi/ViralFlow" target="_blank"><i class="bi bi-code-square"></i></a></div>
+        </li>
+        <li>
+          <div class="title">Unusual SARS-CoV-2 intra-host diversity reveals lineages superinfection</div>
+          <div class="meta">Microbial Genomics · Conceptualisation, methodology, formal analysis · <a href="https://doi.org/10.1099/mgen.0.000751" target="_blank"><i class="bx bx-link"></i></a><a href="https://www.medrxiv.org/content/10.1101/2021.09.18.21263755v1" target="_blank"><i class="bi bi-unlock-fill"></i></a></div>
+        </li>
+        <li>
+          <div class="title">Phylogenetic-based inference reveals distinct transmission dynamics of SARS-CoV-2 lineages Gamma and P.2 in Brazil</div>
+          <div class="meta">iScience · Genomic data analysis · <a href="https://www.sciencedirect.com/science/article/pii/S2589004222004266" target="_blank"><i class="bx bx-link"></i></a><a href="https://www.medrxiv.org/content/10.1101/2021.10.24.21265116v1" target="_blank"><i class="bi bi-unlock-fill"></i></a></div>
+        </li>
+      </ul>
+
+      <h3 class="year">2021</h3>
+      <ul class="pubs">
+        <li>
+          <div class="title">Systematic Review of Wolbachia Symbiont Detection in Mosquitoes: An Entangled Topic about Methodological Power and True Symbiosis</div>
+          <div class="meta">Pathogens · Secondary data review, data analysis, figures design · <a href="https://www.mdpi.com/2076-0817/10/1/39" target="_blank"><i class="bx bx-link"></i></a></div>
+        </li>
+        <li>
+          <div class="title">Lying in wait: the resurgence of dengue virus after the Zika epidemic in Brazil</div>
+          <div class="meta">Nature Communications · DENV1 genomes curation and submission, epidemiological data collection and treatment · <a href="https://www.nature.com/articles/s41467-021-22921-7" target="_blank"><i class="bx bx-link"></i></a><a href="https://doi.org/10.1101/2020.08.10.20172247" target="_blank"><i class="bi bi-unlock-fill"></i></a><a href="https://www.diariodepernambuco.com.br/noticia/vidaurbana/2021/05/fiocruz-pe-investiga-ressurgimento-da-dengue-apos-a-epidemia-de-zika.html" target="_blank"><i class="bi bi-quote"></i></a></div>
+        </li>
+        <li>
+          <div class="title">Metatranscriptomic analysis identifies different viral-like sequences in two neotropical Mansoniini mosquito species</div>
+          <div class="meta">Virus Research · Mosquito collection, data analysis, EVEs filter · <a href="https://doi.org/10.1016/j.virusres.2021.198455" target="_blank"><i class="bx bx-link"></i></a></div>
+        </li>
+        <li>
+          <div class="title">COVID-19 in Amazonas, Brazil, was driven by the persistence of endemic lineages and P.1 emergence</div>
+          <div class="meta">Nature Medicine · Intrahost variant analysis · <a href="https://doi.org/10.1038/s41591-021-01378-7" target="_blank"><i class="bx bx-link"></i></a><a href="https://www.researchsquare.com/article/rs-275494/v1" target="_blank"><i class="bi bi-unlock-fill"></i></a><a href="https://www.nature.com/articles/d41586-021-01480-3" target="_blank"><i class="bi bi-quote"></i></a><a href="https://github.com/dezordi/mFinder/tree/naveca_et_al_2021" target="_blank"><i class="bi bi-code-square"></i></a></div>
+        </li>
+        <li>
+          <div class="title">The ongoing evolution of variants of concern and interest of SARS-CoV-2 in Brazil revealed by convergent indels in the amino (N)-terminal domain of the Spike protein</div>
+          <div class="meta">Virus Evolution · Genomic data analysis · <a href="https://doi.org/10.1093/ve/veab069" target="_blank"><i class="bx bx-link"></i></a><a href="https://doi.org/10.1101/2021.03.19.21253946" target="_blank"><i class="bi bi-unlock-fill"></i></a></div>
+        </li>
+        <li>
+          <div class="title">Identification of a Novel SARS-CoV-2 P.1 Sub-Lineage in Brazil Provides New Insights About the Mechanisms of Emergence of Variants of Concern</div>
+          <div class="meta">Virus Evolution · Genomic data analysis · <a href="https://doi.org/10.1093/ve/veab091" target="_blank"><i class="bx bx-link"></i></a><a href="https://www.researchsquare.com/article/rs-580195/v1" target="_blank"><i class="bi bi-unlock-fill"></i></a></div>
+        </li>
+      </ul>
+
+      <h3 class="year">2020</h3>
+      <ul class="pubs">
+        <li>
+          <div class="title">In and outs of Chuviridae endogenous viral elements: origin of a potentially new retrovirus and signature of ancient and ongoing arms race in mosquito genomes</div>
+          <div class="meta">Frontiers in Genetics · Experimental design, bioinformatics analysis, figures design · <a href="https://doi.org/10.3389/fgene.2020.542437" target="_blank"><i class="bx bx-link"></i></a><a href="https://doi.org/10.1101/2020.02.15.950899" target="_blank"><i class="bi bi-unlock-fill"></i></a><a href="https://medium.com/@zimmer_f/a-rela%C3%A7%C3%A3o-entre-v%C3%ADrus-f%C3%B3sseis-mosquitos-e-star-wars-89c0b2403009" target="_blank"><i class="bi bi-quote"></i></a></div>
+        </li>
+        <li>
+          <div class="title">Multiple introductions followed by ongoing community spread of SARS-CoV-2 at one of the largest metropolitan areas in the Northeast of Brazil</div>
+          <div class="meta">Viruses · In-house scripts, karyoploteR analysis, maximum likelihood phylogeny, spike mutation analysis · <a href="https://doi.org/10.3390/v12121414" target="_blank"><i class="bx bx-link"></i></a><a href="https://doi.org/10.1101/2020.08.25.20171595" target="_blank"><i class="bi bi-unlock-fill"></i></a></div>
+        </li>
+      </ul>
+
+      <h3 class="year">2018</h3>
+      <ul class="pubs">
+        <li>
+          <div class="title">Drosophila parasitoid wasps bears a distinct DNA transposon profile</div>
+          <div class="meta">Mobile DNA · Bioinformatics analysis, data curation and plots · <a href="https://mobilednajournal.biomedcentral.com/articles/10.1186/s13100-018-0127-2" target="_blank"><i class="bx bx-link"></i></a></div>
+        </li>
+        <li>
+          <div class="title">HTT-DB: new features and updates</div>
+          <div class="meta">Database · Manual data curation · <a href="https://doi.org/10.1093/database/bax102" target="_blank"><i class="bx bx-link"></i></a></div>
+        </li>
+        <li>
+          <div class="title">De novo Assembly and Annotation of the Antarctic Alga Prasiola crispa Transcriptome</div>
+          <div class="meta">Frontiers in Molecular Biosciences · Preliminary data analysis · <a href="https://doi.org/10.3389/fmolb.2017.00089" target="_blank"><i class="bx bx-link"></i></a></div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ======= Coding ======= -->
+    <section id="coding" class="tab-pane fade" role="tabpanel">
+
+      <h3 class="year mt-0">Development &amp; maintenance</h3>
+      <div class="row g-3">
+        <div class="col-md-6"><a class="d-block h-100 text-reset" href="https://github.com/WallauBioinfo/ViralFlow" target="_blank"><div class="repo"><h4><i class="bi bi-virus"></i> ViralFlow</h4><p>Workflow for viral genomic analysis guided by reference.</p></div></a></div>
+        <div class="col-md-6"><a class="d-block h-100 text-reset" href="https://github.com/WallauBioinfo/EEfinder" target="_blank"><div class="repo"><h4><i class="bi bi-search"></i> EEfinder</h4><p>Python CLI and package for the identification of endogenous elements.</p></div></a></div>
+        <div class="col-md-6"><a class="d-block h-100 text-reset" href="https://github.com/dezordi/EVEfinder" target="_blank"><div class="repo"><h4><i class="bi bi-diagram-3"></i> EVEfinder</h4><p>Nextflow pipeline (nf-core template) for the identification of endogenous viral elements.</p></div></a></div>
+        <div class="col-md-6"><a class="d-block h-100 text-reset" href="https://github.com/dezordi/LAMPpy" target="_blank"><div class="repo"><h4><i class="bi bi-lightning-charge"></i> LAMPpy</h4><p>Python automation of GLAPD, with a heuristic to speed up LAMP primer design.</p></div></a></div>
       </div>
-    </div>
-  </section><!-- End Hero -->
 
-  <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>About</h2>
-          <p>I'm interested in science, evolution, virology, and the development of bioinformatics tools and  workflows. I have a degree in Biotechnology but my expertise is in Bioinformatics. I hold a Ph.D. in Sciences from Fundação Oswaldo Cruz (FioCruz), I'm a bioinformatician volunteer at Rede Genômica FioCruz (RGF - Fiocruz Genomic Network) and work as Bioinformatician Analyst at Genesis Genomics, in Brazil.
-          </p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4">
-            <br>
-            <img src="img/profile2-img.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <h3>Bioinformatician</h3>
-            <p class="fst-italic">
-              My work on Genesis Genomics involves the development and application of bioinformatics workflows to analyze human genomics (germline and somatic variants) and code development to automatize tasks on AWS. To do it, I mainly develop with Workflow Development Language (WDL), Amazon Web Services (AWS), Docker, Git, Shell Script and Python in agile teams following the Scrum methodology.<br>
-              <br>
-              During my Ph.D., I worked with genomic surveillance of SARS-CoV-2. I built the ViralFlow - with other members of RGF - a Nextflow workflow that performs a set of viral genomic analyses from sequencing raw data. Moreover, I published key studies to understand several aspects of SARS-CoV-2 evolution during the pandemic in Brazil as well as I collaborated with several studies mainly on the biology of mosquito vectors of arbovirus and paleovirology.<br>
-              <br>
-              To perform my Ph.D. research I worked with Multi-user Linux servers, PBS queue system, Docker, Singularity, Nextflow, Python, R and Shell Script.
-            </p>
-          </div>
-          <p>
-            <br>
-            In my free time, I like creating and sharing content related to bioinformatics on Linkedin, reading books, drawing and last but not least, I like having a good time with my family and friends.
-          </p>
-        </div>
-
+      <h3 class="year">Development</h3>
+      <div class="row g-3">
+        <div class="col-md-6"><a class="d-block h-100 text-reset" href="https://github.com/InstitutoTodosPelaSaude/viralQC" target="_blank"><div class="repo"><h4><i class="bi bi-check2-circle"></i> viralQC</h4><p>Quality control of consensus virus genomes using Nextclade, BLAST and internal classification logic.</p></div></a></div>
+        <div class="col-md-6"><a class="d-block h-100 text-reset" href="https://github.com/WallauBioinfo/veritas" target="_blank"><div class="repo"><h4><i class="bi bi-bullseye"></i> Veritas</h4><p>CLI for benchmarking pathogen genomic data from reference-guided strategies against truth datasets.</p></div></a></div>
       </div>
-    </section><!-- End About Section -->
-    
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container" data-aos="fade-up">
 
-        <div class="section-title">
-          <h2>Resume</h2>
-          <p> A brief story of my journey.</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6">
-            <h3 class="resume-title">Sumary</h3>
-            <div class="resume-item pb-0">
-              <h4>Filipe Dezordi</h4>
-              <p><em>Bioinformatician Analyst with 4+ years of experience, developing and applyng bioinformatics tools and workflow to study viral and human genomics.</em></p>
-              <ul>
-                <li>Curitiba, Paraná, Brazil.</li>
-                <li>filipe.zimmer@fiocruz.br</li>
-              </ul>
-            </div>
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Ph.D. in Biosciences and Biotechnology on Health</h4>
-              <h5>2020 - 2024</h5>
-              <p><em>Fundação Oswaldo Cruz (FioCruz) - IAM, PE</em></p>
-              <p style="text-align: justify;">My Ph.D. project research was about SARS-CoV-2 genomics and evolution. During this period, I did my research on the Bioinformatics Core of FioCruz and became a member of Rede Genomica FioCruz (FioCruz Genomic Network). I worked on a multi-user cluster with PBS system, I improved my skills in Python and Shell Script programming, as well as learned R, Docker, and Singularity. I developed - with the RGS staff - the ViralFlow, the workflow that was used to analyze more than 38k genomes in Brazil during the SARS-CoV-2 pandemic.</p>
-            </div>
-            <div class="resume-item">
-              <h4>Master Degree in Biosciences and Biotechnology on Health</h4>
-              <h5>2018 - 2020</h5>
-              <p><em>Fundação Oswaldo Cruz (FioCruz) - IAM, PE</em></p>
-              <p style="text-align: justify;">My master's degree research was about Endogenous Viruses Elements in mosquito genomes. During this period, I did my research on the Entomology Department and Bioinformatics Core of FioCruz. I worked on multi-user Linux servers and started programming in Python and Shell Script.</p>
-            </div>
-            <div class="resume-item">
-              <h4>Bachelor of Biotechnology</h4>
-              <h5>2013 - 2017</h5>
-              <p><em>Universidade Federal do Pampa, São Gabriel, RS</em></p>
-              <p style="text-align: justify;">During this period I started in the research field working for 3 years as a volunteer at Proteomics Applied Lab, where I studied Transposable Elements in a parasitoid wasp draft genome, using Galaxy and GUI software.</p>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Full Bioinformatician Analyst</h4>
-              <h5>2024 - Present</h5>
-              <p><em>Genesis Genomics, Brazil, Remote</em></p>
-              <p style="text-align: justify;">My current position. In April 2024, the departament in which I worked at the Hospital Israelita Albert Einstein went through a merger process, creating the Genesis Genomics, to which I was transferred to continue working in the same position</p>
-              <ul>
-                <li>Automations and Integrations staff.</li>
-                <li>Daily development of codes using Python.</li>
-                <li>Development and update of python CLI tools / packages.</li>
-                <li>Development of serverless systems using AWS CDK in python.</li>
-                <li>CI/CD with github actions and AWS code pipelines.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Full Bioinformatician Analyst</h4>
-              <h5>2022 - 2024</h5>
-              <p><em>Hospital Israelita Albert Einstein (HIAE - Varsomics), Recife, PE </em></p>
-              <ul>
-                <li>Routines of bioinformatics analysis applied to precision medicine.</li>
-                <li>Daily development of codes using Python and WDL.</li>
-                <li>Worked on codes automatize tasks on AWS, and to include new features on Human genomics workflows.</li>
-                <li>Integrate the BioDevOps team, building AWS infraestructure using AWS CDK (IaC).</li>
-                <li>In september 2023 change to full remote position.</li>
-                <li>In April 2024 transferred to Genesis Genomics.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Volunteer Bioinformatician</h4>
-              <h5>2020 - Present</h5>
-              <p><em>Rede Genomica FioCruz (RGF), Recife, PE </em></p>
-              <ul>
-                <li>Workflow development and maintanance.</li>
-                <li>SARS-CoV-2 genomic data analysis, foccused on intrahost variants and large phylogenies.</li>
-                <li>Rmarkdown reports to governamental institutions.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
+      <h3 class="year">Maintenance</h3>
+      <div class="row g-3">
+        <div class="col-md-6"><a class="d-block h-100 text-reset" href="https://github.com/EBI-Metagenomics/EukCC" target="_blank"><div class="repo"><h4><i class="bi bi-clipboard-data"></i> EukCC</h4><p>Tool to estimate genome quality of microbial eukaryotes.</p></div></a></div>
       </div>
-    </section><!-- End Resume Section -->
+    </section>
 
-    <!-- ======= Publications Section ======= -->
-    <section id="publications" class="portfolio section-bg">
-      <div class="container" data-aos="fade-up">
+  </main>
 
-        <div class="section-title">
-          <h2>Publications</h2>
-          <p> My papers as main or collaborator author published in Scientific Journals.</p>
-        </div>
+  <footer>
+    "Nothing in biology makes sense except in the light of evolution." — Theodosius Dobzhansky
+  </footer>
 
-        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-2018">2018</li>
-              <li data-filter=".filter-2020">2020</li>
-              <li data-filter=".filter-2021">2021</li>
-              <li data-filter=".filter-2022">2022</li>
-              <li data-filter=".filter-2023">2023</li>
-              <li data-filter=".filter-2024">2024</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-2018">
-            <div class="portfolio-wrap">
-              <img src="img/papers/01_2018.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Drosophila parasitoid wasps bears a distinct DNA transposon profile</h4>
-                <p>Contribuitions: Bioinformatics analysis, Data curation and plots.</p>
-                <div class="portfolio-links">
-                  <a href="img/papers/01_2018.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                  <a href="https://mobilednajournal.biomedcentral.com/articles/10.1186/s13100-018-0127-2" target="_blank" data-glightbox="type: external"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-2018">
-            <div class="portfolio-wrap">
-              <img src="img/papers/02_2018.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>HTT-DB: new features and updates</h4>
-                <p>Contribuitions: Manual data curation.</p>
-                <div class="portfolio-links">
-                  <a href="img/papers/02_2018.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                  <a href="https://doi.org/10.1093/database/bax102" target="_blank" data-glightbox="type: external"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-2018">
-            <div class="portfolio-wrap">
-              <img src="img/papers/03_2018.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>De novo Assembly and Annotation of the Antarctic Alga Prasiola crispa Transcriptome</h4>
-                <p>Contribuitions: Preliminary data analysis.</p>
-                <div class="portfolio-links">
-                  <a href="img/papers/03_2018.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                  <a href="https://doi.org/10.3389/fmolb.2017.00089" target="_blank" data-glightbox="type: external"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-2020">
-            <div class="portfolio-wrap">
-              <img src="img/papers/04_2020.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>In and outs of Chuviridae endogenous viral elements: origin of a potentially new retrovirus and signature of ancient and ongoing arms race in mosquito genomes</h4>
-                <p>Contribuitions: Experimental design, all bioinformatics analysis (except molecular modeling), pictures design.</p>
-                <div class="portfolio-links">
-                  <a href="img/papers/04_2029.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                  <a href="https://www.frontiersin.org/articles/10.3389/fgene.2020.542437/abstract" target="_blank" data-glightbox="type: external"><i class="bx bx-link"></i></a>
-                  <a href="https://doi.org/10.1101/2020.02.15.950899" target="_blank" data-glightbox="type: external"><i class="bx bi-unlock-fill"></i></a>
-                  <a href="https://medium.com/@zimmer_f/a-rela%C3%A7%C3%A3o-entre-v%C3%ADrus-f%C3%B3sseis-mosquitos-e-star-wars-89c0b2403009" target="_blank" data-glightbox="type: external"><i class="bi bi-quote"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-2020">
-            <div class="portfolio-wrap">
-              <img src="img/papers/05_2020.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Multiple introductions followed by ongoing community spread of SARS-CoV-2 at one of the largest metropolitan areas in the Northeast of Brazil</h4>
-                <p>Contribuitions: Writing in house scripts for datasets treatments, karyoploter analysis, phylogeny by maximum likelihood analysis, spike mutation analysis.</p>
-                <div class="portfolio-links">
-                  <a href="img/papers/05_2020.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                  <a href="https://doi.org/10.3390/v12121414" target="_blank" data-glightbox="type: external"><i class="bx bx-link"></i></a>
-                  <a href="https://doi.org/10.1101/2020.08.25.20171595" target="_blank" data-glightbox="type: external"><i class="bx bi-unlock-fill"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-2021">
-            <div class="portfolio-wrap">
-              <img src="img/papers/06_2021.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Systematic Review of Wolbachia Symbiont Detection in Mosquitoes: An Entangled Topic about Methodological Power and True Symbiosis</h4>
-                <p>Contribuitions: Secondary data review; data analysis; figures design.</p>
-                <div class="portfolio-links">
-                  <a href="img/papers/06_2021.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                  <a href="https://www.mdpi.com/2076-0817/10/1/39" target="_blank" data-glightbox="type: external"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-2021">
-            <div class="portfolio-wrap">
-              <img src="img/papers/07_2021.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Lying in wait: the resurgence of dengue virus after the Zika epidemic in Brazil</h4>
-                <p>Contribuitions: DENV1 genomes curation to submission; DENV1 genomes submission to NCBI; Epidemiological data collection and data treatment.</p>
-                <div class="portfolio-links">
-                  <a href="img/papers/07_2021.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                  <a href="https://www.nature.com/articles/s41467-021-22921-7" target="_blank" data-glightbox="type: external"><i class="bx bx-link"></i></a>
-                  <a href="https://doi.org/10.1101/2020.08.10.20172247" target="_blank" data-glightbox="type: external"><i class="bx bi-unlock-fill"></i></a>
-                  <a href="https://www.diariodepernambuco.com.br/noticia/vidaurbana/2021/05/fiocruz-pe-investiga-ressurgimento-da-dengue-apos-a-epidemia-de-zika.html" target="_blank" data-glightbox="type: external"><i class="bi bi-quote"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-2021">
-            <div class="portfolio-wrap">
-              <img src="img/papers/08_2021.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Metatranscriptomic analysis identifies different viral-like sequences in two neotropical Mansoniini mosquito species</h4>
-                <p>Contribuitions: Mosquito collection, data analysis, EVEs filter.</p>
-                <div class="portfolio-links">
-                  <a href="img/papers/08_2021.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                  <a href="https://doi.org/10.1016/j.virusres.2021.198455" target="_blank" data-glightbox="type: external"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-2021">
-            <div class="portfolio-wrap">
-              <img src="img/papers/09_2021.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>COVID-19 in Amazonas, Brazil, was driven by the persistence of endemic lineages and P.1 emergence</h4>
-                <p>Contribuitions: Intrahost variant analysis.</p>
-                <div class="portfolio-links">
-                  <a href="img/papers/09_2021.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                  <a href="https://doi.org/10.1038/s41591-021-01378-7" target="_blank" data-glightbox="type: external"><i class="bx bx-link"></i></a>
-                  <a href="https://www.researchsquare.com/article/rs-275494/v1" target="_blank" data-glightbox="type: external"><i class="bx bi-unlock-fill"></i></a>
-                  <a href="https://www.nature.com/articles/d41586-021-01480-3" target="_blank" data-glightbox="type: external"><i class="bi bi-quote"></i></a>
-                  <a href="https://github.com/dezordi/mFinder/tree/naveca_et_al_2021" target="_blank" data-glightbox="type: external"><i class="bi bi-code-square"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-2021">
-            <div class="portfolio-wrap">
-              <img src="img/papers/10_2021.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>The ongoing evolution of variants of concern and interest of SARS-CoV-2 in Brazil revealed by convergent indels in the amino (N)-terminal domain of the Spike protein</h4>
-                <p>Contribuitions: Genomic data analysis.</p>
-                <div class="portfolio-links">
-                  <a href="img/papers/10_2021.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                  <a href="https://academic.oup.com/ve/advance-article/doi/10.1093/ve/veab069/6352482?guestAccessKey=507a3a70-a6d4-4f8f-8aca-fdc615e3f6d6" target="_blank" data-glightbox="type: external"><i class="bx bx-link"></i></a>
-                  <a href="https://doi.org/10.1101/2021.03.19.21253946" target="_blank" data-glightbox="type: external"><i class="bx bi-unlock-fill"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-2021">
-            <div class="portfolio-wrap">
-              <img src="img/papers/11_2021.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Identification of a Novel SARS-CoV-2 P.1 Sub-Lineage in Brazil Provides New Insights About the Mechanisms of Emergence of Variants of Concern.</h4>
-                <p>Contribuitions: Genomic data analysis.</p>
-                <div class="portfolio-links">
-                  <a href="img/papers/11_2021.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                  <a href="https://academic.oup.com/ve/advance-article/doi/10.1093/ve/veab091/6462077" target="_blank" data-glightbox="type: external"><i class="bx bx-link"></i></a>
-                  <a href="https://www.researchsquare.com/article/rs-580195/v1" target="_blank" data-glightbox="type: external"><i class="bx bi-unlock-fill"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-2022">
-            <div class="portfolio-wrap">
-              <img src="img/papers/12_2022.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Emergence and Spread of the SARS-CoV-2 Variant of Concern Delta across Different Brazilian Regions</h4>
-                <p>Contribuitions: Genomic data analysis.</p>
-                <div class="portfolio-links">
-                  <a href="img/papers/12_2022.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                  <a href="https://journals.asm.org/doi/10.1128/spectrum.02641-21" target="_blank" data-glightbox="type: external"><i class="bx bx-link"></i></a>
-                  <a href="https://www.medrxiv.org/content/10.1101/2021.11.25.21266251v1" target="_blank" data-glightbox="type: external"><i class="bx bi-unlock-fill"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-2022">
-            <div class="portfolio-wrap">
-              <img src="img/papers/13_2022.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>ViralFlow: an automated workflow for SARS-CoV-2 genome assembly, lineage assignment, mutations and intrahost variants detection</h4>
-                <p>Contribuitions: Conceptualisation, workflow development, methodology, formal analysis.</p>
-                <div class="portfolio-links">
-                  <a href="img/papers/13_2022.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                  <a href="https://www.mdpi.com/1999-4915/14/2/217" target="_blank" data-glightbox="type: external"><i class="bx bx-link"></i></a>
-                  <a href="https://doi.org/10.1101/2021.10.01.21264424" target="_blank" data-glightbox="type: external"><i class="bx bi-unlock-fill"></i></a>
-                  <a href="https://www.cpqam.fiocruz.br/institucional/noticias/qualidade-e-inovacao-marcam-o-trabalho-de-vigilancia-genomica-da-fiocruz-pe" target="_blank" data-glightbox="type: external"><i class="bi bi-quote"></i></a>
-                  <a href="https://github.com/dezordi/ViralFlow" target="_blank" data-glightbox="type: external"><i class="bi bi-code-square"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-2022">
-            <div class="portfolio-wrap">
-              <img src="img/papers/14_2022.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Unusual SARS-CoV-2 intra-host diversity reveals lineages superinfection</h4>
-                <p>Contribuitions: Conceptualisation, methodology, formal analysis.</p>
-                <div class="portfolio-links">
-                  <a href="img/papers/14_2022.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                  <a href="https://www.microbiologyresearch.org/content/journal/mgen/10.1099/mgen.0.000751?originator=authorOffprint&identity=198977&timestamp=20230317140727&signature=b0cf62f2b89abc2ab23fa8f51ff5807e" target="_blank" data-glightbox="type: external"><i class="bx bx-link"></i></a>
-                  <a href="https://www.medrxiv.org/content/10.1101/2021.09.18.21263755v1" target="_blank" data-glightbox="type: external"><i class="bx bi-unlock-fill"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-2022">
-            <div class="portfolio-wrap">
-              <img src="img/papers/15_2022.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Phylogenetic-based inference reveals distinct transmission dynamics of SARS-CoV-2 lineages Gamma and P.2 in Brazil</h4>
-                <p>Contribuitions: Genomic data analysis.</p>
-                <div class="portfolio-links">
-                  <a href="img/papers/15_2022.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                  <a href="https://www.sciencedirect.com/science/article/pii/S2589004222004266" target="_blank" data-glightbox="type: external"><i class="bx bx-link"></i></a>
-                  <a href="https://www.medrxiv.org/content/10.1101/2021.10.24.21265116v1" target="_blank" data-glightbox="type: external"><i class="bx bi-unlock-fill"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-2023">
-            <div class="portfolio-wrap">
-              <img src="img/papers/17_2022.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Real-life evaluation of a rapid antigen test (DPP® SARS-CoV-2 Antigen) for COVID-19 diagnosis of primary healthcare patients, in the context of the Omicron-dominant wave in Brazil</h4>
-                <p>Contribuitions: Phylogenetic analysis.</p>
-                <div class="portfolio-links">
-                  <a href="img/papers/17_2022.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                  <a href="https://www.clinicalmicrobiologyandinfection.com/article/S1198-743X(22)00569-9/fulltext" target="_blank" data-glightbox="type: external"><i class="bx bx-link"></i></a>
-                  <a href="https://www.medrxiv.org/content/10.1101/2022.08.02.22278277v1" target="_blank" data-glightbox="type: external"><i class="bx bi-unlock-fill"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-2023">
-            <div class="portfolio-wrap">
-              <img src="img/papers/19_2023.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>SARS-CoV-2 intra-host diversity, antibody response, and disease severity after reinfection by the variant of concern Gamma in Brazil</h4>
-                <p>Contribuitions: Intrahost analysis.</p>
-                <div class="portfolio-links">
-                  <a href="img/papers/19_2023.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                  <a href="https://www.nature.com/articles/s41598-023-33443-1" target="_blank" data-glightbox="type: external"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-2023">
-            <div class="portfolio-wrap">
-              <img src="img/papers/16_2022.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Ancient origin of Jingchuvirales derived glycoproteins integrated in arthropod genomes</h4>
-                <p>Contribuitions: Conceptualisation; Analysis Design; formal data analysis.</p>
-                <div class="portfolio-links">
-                  <a href="img/papers/16_2022.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                  <a href="https://www.biorxiv.org/content/10.1101/2022.06.22.497255v1" target="_blank" data-glightbox="type: external"><i class="bx bi-unlock-fill"></i></a>
-                  <a href="https://www.scielo.br/j/gmb/a/yCrfgswm3tprJDNnjPqTsxm/?lang=en" target="_blank" data-glightbox="type: external"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-2023">
-            <div class="portfolio-wrap">
-              <img src="img/papers/18_2023.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>RNA virome of sylvatic mosquitoes from northeast Brazil reveals a divergent and diverse insect-specific viral community</h4>
-                <p>Contribuitions:  Mosquito sampling, Supported the sequencing data.</p>
-                <div class="portfolio-links">
-                  <a href="img/papers/18_2023.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                  <a href="https://www.biorxiv.org/content/10.1101/2023.06.27.546706v1" target="_blank" data-glightbox="type: external"><i class="bx bi-unlock-fill"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-2023">
-            <div class="portfolio-wrap">
-              <img src="img/papers/20_2023.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Assessment of clinical characteristics and viral load in individuals infected by Delta and Omicron variants of SARS-CoV-2</h4>
-                <p>Contribuitions: Genomic data analysis.</p>
-                <div class="portfolio-links">
-                  <a href="img/papers/20_2023.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                  <a href="https://linkinghub.elsevier.com/retrieve/pii/S2405844023062023" target="_blank" data-glightbox="type: external"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-2024">
-            <div class="portfolio-wrap">
-              <img src="img/papers/21_2024.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Highly pathogenic avian influenza H5N1 virus infections in pinnipeds and seabirds in Uruguay: implications for bird-mammal transmission in South America</h4>
-                <p>Contribuitions: Data analyis, Microreact dashboard construction.</p>
-                <div class="portfolio-links">
-                  <a href="img/papers/21_2024.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                  <a href="https://www.biorxiv.org/content/10.1101/2023.12.14.571746v1" target="_blank" data-glightbox="type: external"><i class="bx bi-unlock-fill"></i></a>
-                  <a href="https://academic.oup.com/ve/advance-article/doi/10.1093/ve/veae031/7645834?login=false" target="_blank" data-glightbox="type: external"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-2024">
-            <div class="portfolio-wrap">
-              <img src="img/papers/22_2024.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Spatiotemporal transmission of SARS-CoV-2 lineages during 2020–2021 in Pernambuco—Brazil</h4>
-                <p>Contribuitions:  Conceptualisation, genomic data analysis, phylogenetic and phylodinamycs analysis.</p>
-                <div class="portfolio-links">
-                  <a href="img/papers/22_2024.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                  <a href="https://journals.asm.org/doi/10.1128/spectrum.04218-23?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200pubmed" target="_blank" data-glightbox="type: external"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-2024">
-            <div class="portfolio-wrap">
-              <img src="img/papers/23_2024.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>ViralFlow v1.0—a computational workflow for streamlining viral genomic surveillance</h4>
-                <p>Contribuitions: Conceptualisation, software development, tests, docummentation.</p>
-                <div class="portfolio-links">
-                  <a href="img/papers/23_2024.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                  <a href="https://academic.oup.com/nargab/article/6/2/lqae056/7682253" target="_blank" data-glightbox="type: external"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-2024">
-            <div class="portfolio-wrap">
-              <img src="img/papers/24_2024.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Highly divergent and diverse viral community infecting sylvatic mosquitoes from Northeast Brazil </h4>
-                <p>Contribuitions: Samples collection, support on data analysis.</p>
-                <div class="portfolio-links">
-                  <a href="img/papers/24_2024.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                  <a href="https://journals.asm.org/doi/10.1128/jvi.00083-24" target="_blank" data-glightbox="type: external"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-2024">
-            <div class="portfolio-wrap">
-              <img src="img/papers/25_2024.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Infection of South American coatis (Nasua nasua) with highly pathogenic avian influenza H5N1 virus displaying mammalian adaptive mutations</h4>
-                <p>Contribuitions: Data analysis.</p>
-                <div class="portfolio-links">
-                  <a href="img/papers/25_2024.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                  <a href="https://www.sciencedirect.com/science/article/abs/pii/S0882401024003620?via%3Dihub" target="_blank" data-glightbox="type: external"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-2024">
-            <div class="portfolio-wrap">
-              <img src="img/papers/26_2024.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>EEfinder, a general purpose tool for identification of bacterial and viral endogenized elements in eukaryotic genomes</h4>
-                <p>Contribuitions: Conceptualisation, software development, tests.</p>
-                <div class="portfolio-links">
-                  <a href="img/papers/26_2024.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                  <a href="https://www.csbj.org/article/S2001-0370(24)00332-5/fulltext" target="_blank" data-glightbox="type: external"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Publications Section -->
-
-    <!-- ======= Services Section ======= -->
-    <section id="tools" class="services">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Codding</h2>
-          <p>Repositories for tools, scripts or websites that I`ve developed and are publicly available.</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <a href="https://viralflow.github.io/" target="_blank" style="color: rgb(55, 55, 55)">
-            <div class="icon-box iconbox-blue">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
-                </svg>
-                <i class="bx bi-virus"></i>
-              </div>
-              <h4>ViralFlow</h4>
-              <p>An automated workflow to analyze NGS viral genomic data.</p>
-            </div></a>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-            <a href="https://github.com/dezordi/ncbi-acess" target="_blank" style="color: rgb(55, 55, 55)">
-            <div class="icon-box iconbox-orange ">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
-                </svg>
-                <i class="bx bi-info-circle-fill"></i>
-              </div>
-              <h4>NCBI Access</h4>
-              <p>A python toolbox to recover information from NCBI automatically.</p>
-            </div></a>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
-            <a href="https://github.com/dezordi/mosquitotax" target="_blank" style="color: rgb(55, 55, 55)">
-            <div class="icon-box iconbox-pink">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
-                </svg>
-                <i class="bx bi-bug-fill"></i>
-              </div>
-              <h4>Mosquito Taxonomy</h4>
-              <p>Several information about Culicidae taxonomy based on Mosquito Taxonomic Inventory.</p>
-            </div></a>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="400">
-            <a href="https://github.com/dezordi/gcp_poo_study" target="_blank" style="color: rgb(55, 55, 55)">
-            <div class="icon-box iconbox-yellow">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813"></path>
-                </svg>
-                <i class="bx bi-bucket-fill"></i>
-              </div>
-              <h4>NCBI BigQuery</h4>
-              <p>A python toolbox to recover large set of information from NCBI using BigQuery.</p>
-            </div></a>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="500">
-            <a href="https://github.com/dezordi/lab_stuff" target="_blank" style="color: rgb(55, 55, 55)">
-            <div class="icon-box iconbox-red">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572"></path>
-                </svg>
-                <i class="bx bi-arrow-repeat"></i>
-              </div>
-              <h4><a href="">Lab Stuff</a></h4>
-              <p>A set of python and Shell Script that I've used to automatize some routinary taks of my work on Wallau Lab.</p>
-            </div></a>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="600">
-            <a href="https://github.com/dezordi/Rscripts" target="_blank" style="color: rgb(55, 55, 55)">
-            <div class="icon-box iconbox-teal">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762"></path>
-                </svg>
-                <i class="bx bi-r-square-fill"></i>
-              </div>
-              <h4><a href="">Rscripts</a></h4>
-              <p>A set of Rscripts to plot different kind of biological data.</p>
-            </div></a>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Services Section -->
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="extracurricular" class="extracurricular section-bg">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Extracurricular</h2>
-          <p>Activities outside work and academia.</p>
-          <br>
-          <br>
-          <h3>Blog Posts</h3>
-          <br>
-          <div class="row">
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="500">
-              <a href="https://biologiadaconservacao.com.br/cienciaemacao-paleovirologia" target="_blank" style="color: rgb(55, 55, 55)">
-                <div class="extracurricular-box">
-                  <h3>Paleovirologia: entendendo a coevolução entre vírus e seus hospedeiros</h3>
-                  <h4>Blog: Ciência em Ação</h4>
-                  <p>A scientific dissemination text about basics of paleovirology.</p>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="500">
-              <a href="https://zimmer-f.medium.com/o-guia-definitivo-do-bioinformata-dc0b9ff2c6ae" target="_blank" style="color: rgb(55, 55, 55)">
-                <div class="extracurricular-box">
-                  <h3>O guia definitivo do bioinformata</h3>
-                  <h4>Blog pessoal</h4>
-                  <p>A personal text about my journey on bioinformatics, well, at least at the beggin of my PhD.</p>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch  mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="500">
-              <a href="https://zimmer-f.medium.com/os-5-passos-essenciais-para-constru%C3%A7%C3%A3o-de-%C3%A1rvores-filogen%C3%A9ticas-8fdb06178207" target="_blank" style="color: rgb(55, 55, 55)">
-                <div class="extracurricular-box">
-                  <h3>Os 5 passos essenciais para construção de árvores filogenéticas</h3>
-                  <h4>Blog pessoal</h4>
-                  <p>A practical guide to perform phylogenetic analysis.</p>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="500">
-              <a href="https://zimmer-f.medium.com/a-rela%C3%A7%C3%A3o-entre-v%C3%ADrus-f%C3%B3sseis-mosquitos-e-star-wars-89c0b2403009" target="_blank" style="color: rgb(55, 55, 55)">
-                <div class="extracurricular-box">
-                  <h3>A relação entre vírus fósseis, mosquitos e Star Wars</h3>
-                  <h4>Blog pessoal</h4>
-                  <p>A scientific divulgation text about the results of my Masters degree studying endogenous viruses elements on mosquitoes genomes.</p>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="500">
-              <a href="https://blog.varsomics.com/virus-fosseis-no-genoma-humano/" target="_blank" style="color: rgb(55, 55, 55)">
-                <div class="extracurricular-box">
-                  <h3>Vírus fósseis e seu impacto na genômica humana</h3>
-                  <h4>Varsomics</h4>
-                  <p>A scientific divulgation text about the impact of endogenous viruses on human genomics.</p>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="500">
-              <a href="https://blog.varsomics.com/montagem-de-novo-do-genoma/" target="_blank" style="color: rgb(55, 55, 55)">
-                <div class="extracurricular-box">
-                  <h3>Montagem de novo: o que é e quais são os passos?</h3>
-                  <h4>Varsomics</h4>
-                  <p>A scientific divulgation text about denovo assembly.</p>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="500">
-              <a href="https://blog.varsomics.com/bioinformata-profissao/" target="_blank" style="color: rgb(55, 55, 55)">
-                <div class="extracurricular-box">
-                  <h3>Bioinformata: 6 dicas para trabalhar com bioinformática?</h3>
-                  <h4>Varsomics</h4>
-                  <p>A scientific divulgation text about bioinformatics career.</p>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="500">
-              <a href="https://blog.varsomics.com/cobertura-de-sequenciamento/" target="_blank" style="color: rgb(55, 55, 55)">
-                <div class="extracurricular-box">
-                  <h3>Cobertura de Sequenciamento Horizontal x Vertical: Diferenças</h3>
-                  <h4>Varsomics</h4>
-                  <p>A scientific divulgation text about genomic coverage.</p>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="500">
-              <a href="https://blog.varsomics.com/python-r/" target="_blank" style="color: rgb(55, 55, 55)">
-                <div class="extracurricular-box">
-                  <h3>Linguagens Python e R na Bioinformática: qual escolher e como utilizar?</h3>
-                  <h4>Varsomics</h4>
-                  <p>A scientific divulgation text about Python and R languages.</p>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="500">
-              <a href="https://blog.varsomics.com/arquivos-sequenciamento/" target="_blank" style="color: rgb(55, 55, 55)">
-                <div class="extracurricular-box">
-                  <h3>Arquivos de Sequenciamento: Conheça Os Principais</h3>
-                  <h4>Varsomics</h4>
-                  <p>A scientific divulgation text about sequencing files.</p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <br>
-          <br>
-          <h3>Text and News</h3>
-          <br>
-          <div class="row">
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="500">
-              <a href="https://www.nature.com/articles/d41591-021-00009-5" target="_blank" style="color: rgb(55, 55, 55)">
-                <div class="extracurricular-box">
-                  <h3>Art in a pandemic: a digital gallery</h3>
-                  <h4>Nature Medicine</h4>
-                  <p>Nature article organized bringing together art from different scientific areas.</p>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="500">
-              <a href="https://zimmer-f.medium.com/o-guia-definitivo-do-bioinformata-dc0b9ff2c6ae" target="_blank" style="color: rgb(55, 55, 55)">
-                <div class="extracurricular-box">
-                  <h3>Ciência na Praça leva conhecimento de forma lúdica ao Parque Santana</h3>
-                  <h4>Diário de Pernambuco</h4>
-                  <p>Newspaper story about our scientific dissemination project in public squares.</p>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch  mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="500">
-              <a href="https://zimmer-f.medium.com/os-5-passos-essenciais-para-constru%C3%A7%C3%A3o-de-%C3%A1rvores-filogen%C3%A9ticas-8fdb06178207" target="_blank" style="color: rgb(55, 55, 55)">
-                <div class="extracurricular-box">
-                  <h3>Recife: Fiocruz Pernambuco e Espaço Ciência realizam atividades</h3>
-                  <h4>Portal sbpc</h4>
-                  <p>Newspaper story about our scientific dissemination project in public squares.</p>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch  mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="500">
-              <a href="https://portal.fiocruz.br/noticia/rede-da-fiocruz-propoe-fluxo-que-aperfeicoa-vigilancia-genomica" target="_blank" style="color: rgb(55, 55, 55)">
-                <div class="extracurricular-box">
-                  <h3>Rede da Fiocruz propõe fluxo que aperfeiçoa vigilância genômica</h3>
-                  <h4>Portal Fiocruz</h4>
-                  <p>News about the Implementation of ViralFlow on RGF.</p>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch  mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="500">
-              <a href="https://labnetwork.com.br/noticias/rede-genomica-fiocruz-vigilancia-ao-sars-cov-2-deve-permanecer-homogenea/" target="_blank" style="color: rgb(55, 55, 55)">
-                <div class="extracurricular-box">
-                  <h3>Rede Genômica Fiocruz: vigilância ao SARS-CoV-2 deve permanecer homogênea</h3>
-                  <h4>Lab Network</h4>
-                  <p>News about RGS genomic surveillance with ViralFlow.</p>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch  mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="500">
-              <a href="https://www.sillife.com.br/2022/02/17/variante-omicron-representa-mais-de-95-dos-genomas-sequenciados-no-pais/" target="_blank" style="color: rgb(55, 55, 55)">
-                <div class="extracurricular-box">
-                  <h3>Variante ômicron representa mais de 95% dos genomas sequenciados no país</h3>
-                  <h4>Sillife</h4>
-                  <p>News about omicron prevalence through RGS genomic surveillance with ViralFlow.</p>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch  mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="500">
-              <a href="https://portal.fiocruz.br/noticia/estudo-investiga-ressurgimento-da-dengue-apos-epidemia-de-zika#:~:text=Os%20resultados%20sugerem%20que%2C%20em,de%20casos%20em%202017%2D2018." target="_blank" style="color: rgb(55, 55, 55)">
-                <div class="extracurricular-box">
-                  <h3>Estudo investiga ressurgimento da dengue após epidemia de zika</h3>
-                  <h4>Portal Fiocruz</h4>
-                  <p>News about our study of resurgence of dengue after zika epidemic in Brazil.</p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <br>
-          <br>
-          <h3>Talks & Podcasts</h3>
-          <br>
-          <div class="row">
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="500">
-              <a href="https://open.spotify.com/episode/2mFxWQ5fRTYsXSve3dkdKB" target="_blank" style="color: rgb(55, 55, 55)">
-                <div class="extracurricular-box">
-                  <h3>Episódio #80 - Bioinformática!</h3>
-                  <h4>Ciência no Velho Oeste</h4>
-                  <p>Participation in the Ciência no Velho Oeste Podcast, talking about bioinformatics.</p>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="500">
-              <a href="https://open.spotify.com/episode/1xfriJOwbCtKra2jzx8ohH" target="_blank" style="color: rgb(55, 55, 55)">
-                <div class="extracurricular-box">
-                  <h3> Episódio #98 - Paleovirologia</h3>
-                  <h4>Ciência no Velho Oeste</h4>
-                  <p>Participation in the Ciência no Velho Oeste Podcast, talking about paleovirology.</p>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="500">
-              <a href="https://www.youtube.com/watch?v=u6KTa8oYGIk" target="_blank" style="color: rgb(55, 55, 55)">
-                <div class="extracurricular-box">
-                  <h3>O que é Bioinformática e o que eu tenho a ver com isso?</h3>
-                  <h4>UNIPAMPA Debates</h4>
-                  <p>An hour of conversation on bioinformatics on Rádio São Miguel (AM 880) with the staff of the UNIPAMPA.</p>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="500">
-              <a href="https://www.youtube.com/watch?v=FAEsNr75e1s&feature=share&utm_source=EJGixIgBCJiu2KjB4oSJEQ&t=7256" target="_blank" style="color: rgb(55, 55, 55)">
-                <div class="extracurricular-box">
-                  <h3>Introdução à Bioinformática com Python.</h3>
-                  <h4>Simpósio de Introdução a Bioinformática.</h4>
-                  <p>An and a half hour of conversation about python on bioinformatics.</p>
-                </div>
-              </a>
-            </div>
-        </div>
-      </div>
-    </section><!-- End Extracurrilar Section -->
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <h3>Filipe Dezordi</h3>
-      <p>"Nothing in biology makes sense except in the light of evolution."<br>Theodosius Dobzhansky</p>
-      <div class="social-links">
-        <a href="https://github.com/dezordi" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-        <a href="https://twitter.com/dezordi_fz" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="https://www.instagram.com/bio_info101/"  target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/filipe-dezordi-56a112113/"  target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        <a href="https://scholar.google.com/citations?user=qcWuCREAAAAJ&hl=pt-BR"  target="_blank" class="google-plus"><i class="bx bi-mortarboard-fill"></i></a>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: [license-url] -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a><br>
-        Customized by <a href="https://github.com/dezordi">Filipe Dezordi</a>
-      </div>
-    </div>
-  </footer><!-- End Footer -->
-
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="vendor/aos/aos.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="vendor/typed.js/typed.min.js"></script>
-  <script src="vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="js/main.js"></script>
-
+  <script>
+    // open the tab named in the URL hash (e.g. /#publications) and keep the hash in sync
+    const tab = document.querySelector(`[data-bs-target="${location.hash}"]`);
+    if (tab) bootstrap.Tab.getOrCreateInstance(tab).show();
+    document.querySelectorAll('[data-bs-toggle="tab"]').forEach(b =>
+      b.addEventListener('shown.bs.tab', e => history.replaceState(null, '', e.target.dataset.bsTarget)));
+  </script>
 </body>
 
 </html>
